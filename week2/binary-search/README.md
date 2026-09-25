@@ -1,0 +1,4 @@
+1. Here we have to find the number in given array. If we have this number in array the output should be the index of this number. If this number does not exist in array the output should be -1
+2. In my solution the first step is to create array. Then I declare the int that we have to find. In the next step I used built-in binary search method from Java's standard library which called on the first line. It returns the index of our integer. In the next step I used if-else condition statement which returns the index if number exists and returns -1 if number does not exist
+3. Time complexity is O(log n). The first method Arrays.binarySearch devide the array by 2 in every step, searching will finish when one element remains. So the count of steps is k=log2(n). 
+4. Space complexity is O(1). This algorithm works in place, so we have only one variable.
