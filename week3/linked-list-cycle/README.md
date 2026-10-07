@@ -1,0 +1,3 @@
+1. I use Tortoise and Hare approach. "slow" moves 1 step at a time and "fast" moves 2 steps at a time. If there is no cycle, "fast" will reach the end of list. If there is cycle, "fast" will go around the loop and catch up to "slow"
+2. Time Complexity is O(n), where n is the total number of nodes in the list. If there is no cycle, fast reaches the end in n/2 steps. If there is a cycle, fast reduces the gap between itself and slow by 1 node each step, so it catches slow in less than n steps
+3. Space Complexity is O(1). We only use two pointer variables no matter how big the list is

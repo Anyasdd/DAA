@@ -1,0 +1,3 @@
+1. I used dummy node to build new list. While both of lists are not empty I compare values of current elements. On the next step I take smaller number, attach it to new lis and move one step forward in that list. When one list becomes empty I attach the rest of other list to the end because it is already sorted.
+2. Time Complexity O(n+m), where n and m are the lengths of the two lists. We look at each node in both lists only once. We never go backward or loop inside a loop
+3. Space Complexity O(1). We do not create a new list in memory. We only change the pointers of existing nodes
