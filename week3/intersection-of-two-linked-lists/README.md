@@ -1,0 +1,3 @@
+1. We have two linked lists. We need to find the node where they connect. If they do not connect, we return null
+2. I use two pointers, a and b. Pointer a starts from list A, and pointer b starts from list B. Both pointers move one step at a time. When one pointer reaches the end, it starts from the beginning of the other list. This helps both pointers travel the same total distance
+3. Time Complexity is O(m + n). m and n are the lengths of two lists. Each pointer travels through at most both lists. So the total time depends on lengths of both lists

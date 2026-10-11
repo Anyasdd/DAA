@@ -1,0 +1,3 @@
+1. We have a linked list and number called val. We need to remove every node that contains this number
+2. First, I check the beginning of the list. If the first node contains number, I move head to next node. I repeat this until the first node has a different value or the list becomes empty. Then I use pointer current to check the remaining nodes. If next node has the number we want to remove, I skip that node. I move forward
+3. Time Complexity is O(n). We check each node of the linked list only once. The time increases with number of nodes

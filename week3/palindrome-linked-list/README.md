@@ -1,0 +1,3 @@
+1. We have a linked list. We need to check if the numbers are same when we read them from left to right and from right to left. If they are same, we return true. Otherwise, we return false
+2. I  use an ArrayList to store all numbers from the linked list. Then I use two indexes, left and right. The left index starts at the beginning, and the right index starts at the end. I compare the numbers. If they are different I return false. If they are the same I move both indexes toward the middle
+3. Time Complexity is O(n). First, we go through the linked list to copy all numbers. Then we compare the numbers from both ends. Both steps take O(n) time, so the total time complexity is O(n)
