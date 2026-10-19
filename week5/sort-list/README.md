@@ -1,0 +1,3 @@
+1. We have a linked list of numbers. We need to sort the list from smallest to largest
+2. First I use two pointers, slow and fast, to find the middle of the list. Then I divide the list into two smaller lists. I sort both parts using the same method. Finaly I merge the sorted lists into one list
+3. Time Complexity is O(n log n). I divide the linked list into two parts again and again. There are about log n levels. Merging all nodes at each level takes O(n) time
