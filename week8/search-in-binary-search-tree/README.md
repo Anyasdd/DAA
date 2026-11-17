@@ -1,0 +1,3 @@
+1. We have a binary search tree and a number called val. We need to find the node with this number and return it with its children. If the number does not exist we return null
+2. I use recursion to search in the tree. In BST smaller numbers are on the left and larger numbers are on the right. First, I compare the current node value with val. If they are equal I return the node. If val is smaller I search the left side. Otherwise, I search the right side
+3. Time Complexity: O(h). Here h is the height of the tree. I only search one side at each step. For a balanced BST the time complexity is O(log n). For a tree that looks like a linked list, it can be O(n)
