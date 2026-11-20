@@ -1,5 +1,16 @@
 
-class Solution {
+public class ConverSortedArrayToBST {
+
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+    }
+
     public TreeNode sortedArrayToBST(int[] nums) {
         return buildTree(nums, 0, nums.length - 1);
     }
@@ -17,5 +28,29 @@ class Solution {
         root.right = buildTree(nums, mid + 1, right);
 
         return root;
+    }
+
+    public static void printInorder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        printInorder(root.left);
+        System.out.print(root.val + " ");
+        printInorder(root.right);
+    }
+
+    public static void main(String[] args) {
+        ConverSortedArrayToBST solution =
+                new ConverSortedArrayToBST();
+
+        int[] nums = {-10, -3, 0, 5, 9};
+
+        TreeNode root = solution.sortedArrayToBST(nums);
+
+        System.out.println("Root: " + root.val);
+        System.out.print("Inorder traversal: ");
+        printInorder(root);
+        System.out.println();
     }
 }
